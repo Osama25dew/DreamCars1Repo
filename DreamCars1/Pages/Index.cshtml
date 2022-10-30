@@ -9,3 +9,7 @@
     <p>I'm going to make project on cars.'</p>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+@foreach(var car in Model.Cars){
+    <h2>@car.carName</h2>
+
+}
