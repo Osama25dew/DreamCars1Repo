@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Mazda",
+    "image": "https://images.app.goo.gl/piqgv83XAQ2faJ4D6"
+  },
+  {
+    "id": 2,
+    "name": "Toyota",
+    "image": "https://images.app.goo.gl/gn3nZkdYX2kW9Z727"
+  },
+  {
+    "id": 3,
+    "name": "Honda",
+    "image": "https://images.app.goo.gl/zAYRBfgHMmD8xEwa9"
+  },
+  {
+    "id": 4,
+    "name": "Mercedes",
+    "image": "https://images.app.goo.gl/PxhpMJcMvrGhxD47A"
+  },
+  {
+    "id": 5,
+    "name": "Ferrari",
+    "image": "https://images.app.goo.gl/b9sq65sXzhiNehrd6"
+  }
+]
