@@ -44,11 +44,14 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-app.MapGet("/CarRecord", (context) =>
+app.UseEndpoints(endpoints => //error solved by bilal
 {
-    IEnumerable<Car> CarRecord = app.ApplicationServices.GetService<JsonCarFile>().getCarsData();
-    var JsonCarRecord=JsonSerializer.Serialize<IEnumerable<Car>>(CarRecord); //conversion to string
-    return context.Response.WriteAsync(JsonCarRecord);
+    endpoints.MapGet("/CarRecord", (context) =>
+    {
+        IEnumerable<Car> CarRecord = app.Services.GetRequiredService<JsonCarFile>().getCarsData();
+        var JsonCarRecord = JsonSerializer.Serialize(CarRecord); //conversion to string
+        return context.Response.WriteAsync(JsonCarRecord);
+    });
 });
 
 app.Run();
