@@ -11,7 +11,7 @@ namespace DreamCars1.Models
         [JsonPropertyName("name")]
         public string carName { get; set; }
 
-        [JsonPropertyName("img")]
+        [JsonPropertyName("image")]
         public string carImg { get; set; }
 
         public override string ToString() //yani jab b mai ToString fn ko call karoon ga to hamesha yahi fn call ho ga bcz mai ne isse override kiya (fnoverriding means k same fn likha jaye with same parameters)

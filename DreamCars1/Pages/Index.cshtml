@@ -5,11 +5,18 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome Honey!!</h1>
-    <p>I'm going to make project on cars.'</p>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Dream Cars</h1>
 </div>
-@foreach(var car in Model.Cars){
-    <h2>@car.carName</h2>
 
-}
+<div class="row">
+    @foreach (var car in Model.Cars)
+    {
+        <div id="carContainer" class="col-lg-3 col-md-6 col-sm-12">
+            <img id="carImage" src="@car.carImg" alt="@car.carName">
+            <span id="carTitle">@car.carName</span>
+            <span id="carPrice">Rs. Coming Soon</span>
+            <span><input id="carQuantity" type="number" name="quantity" value="" placeholder="0"/></span>
+            <span id="cartButton"><button>Add to Cart</button></span>
+        </div>
+    }
+</div>

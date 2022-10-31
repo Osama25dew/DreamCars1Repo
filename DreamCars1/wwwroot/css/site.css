@@ -1,3 +1,38 @@
+#carImage{
+    width:95%;
+    height:90%;
+    display:block;
+    margin: 0 auto;
+}
+#carContainer{
+    margin-bottom:7em;
+}
+#carTitle{
+    display:block;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+}
+#carPrice{
+    display:block;
+    text-align:center;
+    color:aqua;
+    font-weight:800;
+}
+#carQuantity{
+    width:50%;
+    display:inline;
+    text-align:center;
+}
+#cartButton {
+    width: 50%;
+    display:inline;
+}
+
+
+
+
+
 html {
   font-size: 14px;
 }
