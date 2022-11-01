@@ -8,10 +8,10 @@ namespace DreamCars1.Pages
     public class IndexModel : PageModel
     {
         public IEnumerable<Car> Cars { get; private set; }
-        public JsonCarFile CarService;
+        public Services.JsonCarFile CarService;
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger, JsonCarFile carService)
+        public IndexModel(ILogger<IndexModel> logger, Services.JsonCarFile carService)
         {
             _logger = logger;
             CarService = carService;
@@ -19,7 +19,7 @@ namespace DreamCars1.Pages
 
         public void OnGet()
         {
-            Cars = CarService.getCarsData();
+            
         }
     }
 }
