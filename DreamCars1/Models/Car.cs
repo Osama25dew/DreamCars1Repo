@@ -5,6 +5,9 @@ namespace DreamCars1.Models
 {
     public class Car
     {
+        internal string name;
+        internal string image;
+
         [JsonPropertyName("id")] //if we are using same name in both json and in class...then we dont need to sync jsonpropertyname
         public int carId { get; set; }
        

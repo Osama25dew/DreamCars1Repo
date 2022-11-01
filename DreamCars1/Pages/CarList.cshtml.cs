@@ -10,6 +10,9 @@ namespace DreamCars1.Pages
     {
         public IEnumerable<Car> Cars { get; private set; }
         public Services.JsonCarFile CarService;
+        internal int carId;
+        internal string name;
+        internal string image;
         private readonly ILogger<CarListModel> _logger;
 
         public CarListModel(ILogger<CarListModel> logger, Services.JsonCarFile carService)
@@ -26,6 +29,11 @@ namespace DreamCars1.Pages
         }
 
         public override int GetHashCode()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static implicit operator CarListModel(Car v)
         {
             throw new NotImplementedException();
         }
